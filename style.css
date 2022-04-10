@@ -1,7 +1,52 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+#menu {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  font: 14px Comic Sans MS;
+}
+/* Color of Page */
+body {
+  background-color: #f8f29d;
+}
+/* Put menu items in line and make spaces */
+
+#menu ul {
+  background: rgb(214, 249, 255);
+  margin: 10px 15px;
+  position: relative;
+}
+#menu ul li {
+  margin: 10px 15px;
+  display: inline-block;
+  position: relative;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+#menu li :hover {
+  background-color: white;
+}
+
+#title {
+  font: bold 40px Comic Sans MS;
+  background: #92ee9a;
+  text-align: center;
+}
+
+label.logo {
+  color: black;
+  font-size: 35px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 100px;
+}
+
+
+#align {
+    background: #f8f29d;
+    text-align: center;
 }
