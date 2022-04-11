@@ -50,3 +50,8 @@ label.logo {
     background: #f8f29d;
     text-align: center;
 }
+
+img {
+    border-radius: 25px;
+    border: 3px solid black;
+}
