@@ -56,3 +56,11 @@ img {
     border: 3px solid black;
 	text-align: center;
 }
+
+#photo {
+/* align-items: center; */
+margin:auto;
+width: 40%;
+padding: 50px;
+}
+
