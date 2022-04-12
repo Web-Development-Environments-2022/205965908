@@ -130,3 +130,9 @@ input[type=submit] {
 	.emoji:hover {
 		cursor: pointer;
 	}
+
+	#contact ul li {
+		margin: 10px 15px;
+		display: inline-block;
+		position: relative;
+	  }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -258,15 +259,17 @@
       <br />
       <div id="title">Contact Me</div>
 
-      <button onclick="toggleEmojiDrawer()">Add emojis to message</button>
-
-<div id="drawer" class="emoji-drawer hidden"> 
-  <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
-  <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
-  <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
-  <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
-  <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
-</div>
+      Add emojis to your message:
+      <div id="contact"> 
+        <ul>
+        <li><div class="emoji" onclick="addEmoji(this.innerHTML)">&#128512</div></li>
+          <li><div class="emoji" onclick="addEmoji(this.innerHTML)">&#128513</div></li>
+            <li><div class="emoji" onclick="addEmoji(this.innerHTML)">&#128514</div></li>
+              <li><div class="emoji" onclick="addEmoji(this.innerHTML)">&#128515</div></li>
+                <li><div class="emoji" onclick="addEmoji(this.innerHTML)">&#128516</div> </li>
+        </ul>
+        
+      </div>
       <br />
       <div>
         <form  method="post" action="mailto:elranor@post.bgu.ac.il" enctype="text/plain">
@@ -284,7 +287,7 @@
             <label for="message">Message</label>
             <br />
             
-            <input type="text" height="100" id="message" name="Message: " placeholder="">
+            <input type="text" height="100" id="message" name="Message: " required placeholder="">
             <br>
             <br>
             
