@@ -257,6 +257,16 @@
       <br />
       <br />
       <div id="title">Contact Me</div>
+
+      <button onclick="toggleEmojiDrawer()">Add emojis to message</button>
+
+<div id="drawer" class="emoji-drawer hidden"> 
+  <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
+  <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
+  <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
+  <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
+  <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
+</div>
       <br />
       <div>
         <form  method="post" action="mailto:elranor@post.bgu.ac.il" enctype="text/plain">
@@ -271,20 +281,13 @@
 
             <br />
             
-            <label for="input">Message</label>
+            <label for="message">Message</label>
             <br />
             
-            <input id="input" required placeholder="">
+            <input type="text" height="100" id="message" name="Message: " placeholder="">
             <br>
             <br>
-            <button onclick="toggleEmojiDrawer()">Add emojis to your message</button> <br>
-            <div id="drawer" class="emoji-drawer hidden"> 
-              <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
-              <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
-              <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
-              <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
-              <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
-            </div>
+            
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -315,9 +318,10 @@
     </script>
     <script>
 function addEmoji(emoji) {
-  let inputEle = document.getElementById('message'); 
+  let input = document.getElementById('message'); 
   input.value += emoji;
 }
+
 function toggleEmojiDrawer() {
   let drawer = document.getElementById('drawer');
   if (drawer.classList.contains('hidden')) {
