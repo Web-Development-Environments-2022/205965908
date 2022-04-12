@@ -270,10 +270,21 @@
             <input type="email" id="email" placeholder="" required width="100">
 
             <br />
-            <label for="message">Message</label>
+            
+            <label for="input">Message</label>
             <br />
-            <input type="text" height="100" id="message" name="Message: " required placeholder="">
-
+            
+            <input id="input" required placeholder="">
+            <br>
+            <br>
+            <button onclick="toggleEmojiDrawer()">Add emojis to your message</button> <br>
+            <div id="drawer" class="emoji-drawer hidden"> 
+              <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
+              <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
+              <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
+              <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
+              <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
+            </div>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -301,6 +312,22 @@
         let random = Math.floor(Math.random()*2);
         image.src = images[random];
       }, 3000)
+    </script>
+    <script>
+function addEmoji(emoji) {
+  let inputEle = document.getElementById('message'); 
+  input.value += emoji;
+}
+function toggleEmojiDrawer() {
+  let drawer = document.getElementById('drawer');
+  if (drawer.classList.contains('hidden')) {
+    drawer.classList.remove('hidden');
+  } 
+  
+  else {
+    drawer.classList.add('hidden');
+  }
+}
     </script>
   </body>
 </html>
