@@ -57,10 +57,14 @@ img {
 	text-align: center;
 }
 
-#photo {
-/* align-items: center; */
+/* #photo {
+align-items: center;
 margin:auto;
 width: 40%;
 padding: 50px;
-}
+} */
 
+#iframe {
+    display: block;
+    border-style:none;
+}
