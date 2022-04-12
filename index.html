@@ -69,7 +69,9 @@
       <div id="title">My Photos</div>
       <br />
       <!-- <div id="photo"> -->
+      <div>
       <iframe id="image" frameborder="0" scrolling="no" width="100%" height="500" class="roundPic"></iframe>
+      </div>
       <!-- </div> -->
       <br />
       <br />
@@ -256,7 +258,25 @@
       <br />
       <div id="title">Contact Me</div>
       <br />
-      <br />
+      <div>
+        <form  method="post" action="mailto:elranor@post.bgu.ac.il" enctype="text/plain">
+            <label for="fname">Name</label>
+            <br />
+            <input type="text" id="fname" name="Name: " placeholder="">
+            <br />
+
+            <label for="email">E-mail </label>
+            <br />
+            <input type="email" id="email" placeholder="" required width="100">
+
+            <br />
+            <label for="message">Message</label>
+            <br />
+            <input type="text" height="100" id="message" name="Message: " required placeholder="">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
       <br />
     </section>
     <script type="text/javascript">
