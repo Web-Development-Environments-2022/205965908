@@ -136,3 +136,8 @@ input[type=submit] {
 		display: inline-block;
 		position: relative;
 	  }
+	#contact ul {
+		margin: 10px 15px;
+  		position: relative;
+		display: inline-block;
+	}
